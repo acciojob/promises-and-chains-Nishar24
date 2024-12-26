@@ -4,7 +4,7 @@ const ageInput = document.getElementById('age');
 const nameInput = document.getElementById('name');
 
 form.addEventListener('submit', (event) => {
-    event.preventDefault();
+    //event.preventDefault();
 
     const age = parseInt(ageInput.value);
     const name = nameInput.value;
