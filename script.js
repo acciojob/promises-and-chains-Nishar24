@@ -9,7 +9,7 @@ form.addEventListener('submit', (event) => {
     const age = parseInt(ageInput.value);
     const name = nameInput.value;
 
-    if (age && name) {
+    if (age != null && age !== '' && name != null && name !== ''){
         const promise = new Promise((resolve, reject) => {
             setTimeout(() => {
                 if (age >= 18) {
